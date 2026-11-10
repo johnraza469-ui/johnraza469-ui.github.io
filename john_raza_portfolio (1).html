@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="John Raza — Marketing Head, Growth Strategist and Performance Marketing Professional. Strategy, creative execution and measurable growth.">
+<title>John Raza — Marketing & Growth</title>
+<style>
+:root{--bg:#f2f0eb;--ink:#171815;--muted:#666861;--line:#d5d3cc;--acid:#c7f36b;--dark:#171815;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}
+.wrap{width:min(1180px,calc(100% - 48px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:900;letter-spacing:-1.5px;font-size:22px}.brand span{color:#777}.navlinks{display:flex;gap:28px;font-size:12px;text-transform:uppercase;letter-spacing:1.1px}.navlinks a:hover{opacity:.55}.menu{display:none;background:none;border:0;font-size:24px}
+.hero{min-height:690px;padding:92px 0 72px;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2.2px;color:var(--muted);display:flex;align-items:center;gap:10px}.dot{width:8px;height:8px;border-radius:50%;background:#7cae27;display:inline-block}.hero h1{font-size:clamp(58px,9vw,120px);line-height:.88;letter-spacing:-.085em;margin:28px 0 30px;font-weight:900}.hero h1 em{font-style:normal;color:#85877f}.intro{font-size:18px;line-height:1.6;color:#55574f;max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:18px;padding:16px 20px;border:1px solid var(--ink);font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700;transition:.2s}.btn.primary{background:var(--ink);color:white}.btn:hover{transform:translateY(-3px)}.hero-art{height:470px;background:var(--dark);color:white;position:relative;overflow:hidden;padding:28px;display:flex;flex-direction:column;justify-content:space-between}.hero-art:before{content:"";position:absolute;width:330px;height:330px;border:1px solid #8a8c80;border-radius:50%;right:-70px;top:70px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06,0 0 0 105px #ffffff04}.hero-art:after{content:"";position:absolute;width:190px;height:190px;background:var(--acid);border-radius:50%;right:62px;top:142px;mix-blend-mode:screen;opacity:.9;filter:blur(1px)}.art-top,.art-bottom{position:relative;z-index:2;display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#c5c6bd}.art-mark{position:relative;z-index:2;font-size:clamp(70px,10vw,130px);font-weight:900;letter-spacing:-.1em;line-height:.8;margin-top:auto;margin-bottom:20px}.art-bottom strong{color:var(--acid);font-weight:600}
+.marquee{background:var(--acid);padding:18px 0;overflow:hidden;white-space:nowrap;font-size:13px;letter-spacing:2px;font-weight:800;text-transform:uppercase}.marquee span{display:inline-block;padding-right:35px}
+section{padding:105px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;margin-bottom:54px}.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}h2{font-size:clamp(38px,6vw,72px);line-height:.96;letter-spacing:-.07em;margin:15px 0 0;max-width:760px}.section-note{max-width:260px;color:var(--muted);font-size:13px;line-height:1.6;padding-top:28px}.manifesto{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.manifesto blockquote{font-size:clamp(30px,4vw,50px);letter-spacing:-.06em;line-height:1.05;margin:0;font-weight:800}.manifesto p{color:var(--muted);line-height:1.8;font-size:15px;margin:0 0 16px}
+.capabilities{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.cap{padding:28px 8px 30px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:55px 1fr 30px;gap:14px;align-items:start}.cap:nth-child(odd){margin-right:34px}.cap .num{font-size:11px;color:var(--muted);padding-top:7px}.cap h3{margin:0;font-size:22px;letter-spacing:-.8px}.cap p{margin:9px 0 0;color:var(--muted);font-size:13px;line-height:1.6;max-width:390px}.cap .arrow{font-size:22px;text-align:right}
+.proof{background:var(--dark);color:white}.proof .kicker,.proof .section-note{color:#a5a69e}.proof h2{color:white}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#41423d;border:1px solid #41423d}.stat{background:var(--dark);padding:32px 26px;min-height:190px}.stat strong{font-size:clamp(36px,5vw,60px);letter-spacing:-.07em;color:var(--acid);display:block}.stat span{font-size:12px;color:#c4c5bc;line-height:1.5;display:block;margin-top:14px}.proof-note{font-size:12px;color:#a5a69e;line-height:1.6;margin-top:18px}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{min-height:310px;padding:28px;background:#e2e0d9;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.project:nth-child(2){background:#d7dfc8}.project:nth-child(3){background:#d8d7d0}.project:nth-child(4){background:#ded6cb}.project:hover{transform:translateY(-5px)}.project-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#606159}.project h3{font-size:clamp(28px,4vw,44px);line-height:.98;letter-spacing:-.06em;max-width:400px;margin:0}.project p{font-size:13px;line-height:1.6;color:#5d5e57;max-width:380px;margin:12px 0 0}.tag{display:inline-block;border:1px solid #999a91;padding:7px 9px;font-size:9px;letter-spacing:1px;text-transform:uppercase;margin:5px 5px 0 0}
+.process{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line)}.step{padding:22px 15px 10px 0;border-right:1px solid var(--line);margin-right:16px}.step:last-child{border:0}.step b{font-size:11px;color:var(--muted)}.step h3{font-size:20px;letter-spacing:-.7px;margin:28px 0 10px}.step p{font-size:12px;color:var(--muted);line-height:1.6}
+.about{background:#e5e3dc}.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}.about-stamp{background:var(--acid);min-height:280px;padding:25px;display:flex;flex-direction:column;justify-content:space-between}.about-stamp strong{font-size:65px;letter-spacing:-.1em;line-height:.8}.about-stamp span{font-size:10px;letter-spacing:1.5px;text-transform:uppercase}.about-copy h2{margin:0 0 24px}.about-copy p{font-size:15px;line-height:1.8;color:#55574f;max-width:700px}.facts{display:flex;gap:35px;flex-wrap:wrap;margin-top:28px}.fact b{display:block;font-size:13px}.fact span{font-size:11px;color:var(--muted);display:block;margin-top:5px}
+.contact{background:var(--acid);border:0}.contact h2{font-size:clamp(48px,8vw,100px);max-width:900px}.contact-row{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:45px}.contact-row p{max-width:400px;line-height:1.6;font-size:14px}.contact .btn{background:var(--ink);color:white;border-color:var(--ink)}
+footer{background:var(--dark);color:white;padding:30px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:11px;color:#b6b7af}.footer-brand{font-size:20px;font-weight:900;color:white;letter-spacing:-1px}
+@media(max-width:760px){.wrap{width:min(100% - 34px,1180px)}.nav{height:68px}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);padding:22px;z-index:10;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{padding:65px 0 55px;grid-template-columns:1fr;gap:35px;min-height:auto}.hero-art{height:330px}.section-head{display:block;margin-bottom:35px}.section-note{padding-top:15px}.manifesto,.about-grid{grid-template-columns:1fr;gap:30px}.capabilities,.work-grid{grid-template-columns:1fr}.cap:nth-child(odd){margin-right:0}.stats{grid-template-columns:1fr}.stat{min-height:140px}.process{grid-template-columns:1fr 1fr;gap:10px}.step{border-right:0;border-bottom:1px solid var(--line);margin:0;padding:18px 8px 18px 0}.step h3{margin-top:18px}.contact-row{display:block}.contact-row .btn{margin-top:15px}.footer-row{align-items:flex-start;flex-direction:column}.about-stamp{min-height:220px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#top">JOHN RAZA<span>.</span></a>
+  <nav class="navlinks" id="navlinks"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <button class="menu" aria-label="Open navigation" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</header>
+<main id="top">
+<section class="wrap hero" style="border:0">
+  <div>
+    <div class="eyebrow"><i class="dot"></i> Marketing leadership · Growth strategy · Digital execution</div>
+    <h1>I BUILD<br><em>GROWTH.</em></h1>
+    <p class="intro">I connect strategic thinking, creative execution and performance marketing to help brands earn attention, build stronger digital presence and move business forward.</p>
+    <div class="actions"><a class="btn primary" href="#work">Explore selected work <span>↘</span></a><a class="btn" href="#contact">Start a conversation <span>↗</span></a></div>
+  </div>
+  <div class="hero-art" aria-label="Abstract graphic representing momentum and adaptation">
+    <div class="art-top"><span>Independent thinking</span><span>01 / 05</span></div>
+    <div class="art-mark">JR<span style="color:var(--acid)">.</span></div>
+    <div class="art-bottom"><span>Strategy into action</span><strong>ALWAYS ADAPTING ↗</strong></div>
+  </div>
+</section>
+<div class="marquee"><span>THINK CLEARLY · BUILD BOLDLY · MEASURE WHAT MATTERS · </span><span>THINK CLEARLY · BUILD BOLDLY · MEASURE WHAT MATTERS · </span></div>
+<section id="approach">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">01 / The point of view</div><h2>BEHIND EVERY<br>NUMBER, A DECISION.</h2></div><p class="section-note">Marketing is not a collection of disconnected tactics. It is a series of deliberate choices that create momentum.</p></div>
+  <div class="manifesto"><blockquote>“Good marketing makes noise. Great marketing makes progress.”</blockquote><div><p>I approach marketing as a business discipline: understand the audience, find the real opportunity, make the message matter, then learn from what the market tells us.</p><p>That means balancing creative instinct with commercial thinking, and making sure execution is connected to a clear objective.</p></div></div>
+ </div>
+</section>
+<section id="expertise">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">02 / What I work on</div><h2>STRATEGY MEETS<br>EXECUTION.</h2></div><p class="section-note">A connected set of capabilities built around brand relevance, audience growth and measurable performance.</p></div>
+  <div class="capabilities">
+   <article class="cap"><span class="num">01</span><div><h3>Performance Marketing</h3><p>Paid campaign planning, audience development, optimization and budget discipline.</p></div><span class="arrow">↗</span></article>
+   <article class="cap"><span class="num">02</span><div><h3>Brand Strategy</h3><p>Positioning, messaging and practical direction that gives a brand a sharper point of view.</p></div><span class="arrow">↗</span></article>
+   <article class="cap"><span class="num">03</span><div><h3>Audience Growth</h3><p>Building relevant communities through content, distribution, engagement and iteration.</p></div><span class="arrow">↗</span></article>
+   <article class="cap"><span class="num">04</span><div><h3>Campaign Leadership</h3><p>Turning objectives into coordinated plans, clear responsibilities and focused execution.</p></div><span class="arrow">↗</span></article>
+   <article class="cap"><span class="num">05</span><div><h3>Content & Creative Direction</h3><p>Developing campaign ideas and content systems that make brands easier to notice and remember.</p></div><span class="arrow">↗</span></article>
+   <article class="cap"><span class="num">06</span><div><h3>Digital Growth</h3><p>Connecting social, search, websites and digital experiences into a more coherent growth journey.</p></div><span class="arrow">↗</span></article>
+  </div>
+ </div>
+</section>
+<section class="proof">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">03 / How I measure progress</div><h2>PROOF OVER<br>PROMISES.</h2></div><p class="section-note">A strong portfolio should show the work behind the outcome. This space is designed for verified metrics and evidence from approved, non-political commercial projects.</p></div>
+  <div class="stats">
+   <div class="stat"><strong>01</strong><span>Start with a clear business objective — not a vanity metric.</span></div>
+   <div class="stat"><strong>02</strong><span>Show the strategy, execution and learning behind each campaign.</span></div>
+   <div class="stat"><strong>03</strong><span>Report outcomes with context, timeframe and credible evidence.</span></div>
+  </div>
+  <p class="proof-note">Performance figures will be added only when you provide approved commercial campaign data and reporting periods.</p>
+ </div>
+</section>
+<section id="work">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">04 / Selected work</div><h2>MAKE THE WORK<br>DO THE TALKING.</h2></div><p class="section-note">A curated selection of commercial projects. Replace these project briefs with approved client work, visuals and verified outcomes.</p></div>
+  <div class="work-grid">
+   <article class="project"><div class="project-top"><span>Case study / 01</span><span>Brand growth</span></div><div><h3>Building a brand people remember.</h3><p>Positioning, content direction and digital presence for a consumer-facing brand.</p><span class="tag">Brand strategy</span><span class="tag">Social media</span></div></article>
+   <article class="project"><div class="project-top"><span>Case study / 02</span><span>Performance</span></div><div><h3>Turning attention into action.</h3><p>Campaign planning and performance optimization focused on a defined business objective.</p><span class="tag">Paid media</span><span class="tag">Optimization</span></div></article>
+   <article class="project"><div class="project-top"><span>Case study / 03</span><span>Digital presence</span></div><div><h3>Making the digital experience work harder.</h3><p>Connecting messaging, website experience and acquisition touchpoints into one journey.</p><span class="tag">Digital strategy</span><span class="tag">Web</span></div></article>
+   <article class="project"><div class="project-top"><span>Case study / 04</span><span>Campaign leadership</span></div><div><h3>From a big idea to coordinated execution.</h3><p>Bringing planning, content, stakeholders and campaign delivery together.</p><span class="tag">Leadership</span><span class="tag">Campaigns</span></div></article>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">05 / The operating rhythm</div><h2>THINK. BUILD.<br>LEARN. REPEAT.</h2></div><p class="section-note">A practical process that keeps strategy connected to what actually happens in market.</p></div>
+  <div class="process">
+   <div class="step"><b>01 / DISCOVER</b><h3>Understand</h3><p>Business, audience, context and the real challenge.</p></div>
+   <div class="step"><b>02 / STRATEGIZE</b><h3>Decide</h3><p>Set direction, priorities, message and measures.</p></div>
+   <div class="step"><b>03 / CREATE</b><h3>Develop</h3><p>Build the campaign, content and experience.</p></div>
+   <div class="step"><b>04 / EXECUTE</b><h3>Deliver</h3><p>Coordinate channels, people, timing and budget.</p></div>
+   <div class="step"><b>05 / OPTIMIZE</b><h3>Improve</h3><p>Read the data, learn quickly and refine the work.</p></div>
+  </div>
+ </div>
+</section>
+<section id="about" class="about">
+ <div class="wrap about-grid">
+  <div class="about-stamp"><span>Professional profile / 2026</span><strong>JR.</strong><span>Curiosity is a competitive advantage.</span></div>
+  <div class="about-copy"><div class="kicker">06 / A little about me</div><h2>CURIOUS BY NATURE.<br>COMMERCIAL BY DESIGN.</h2>
+   <p>I’m John Raza, a marketing professional and entrepreneur with a BBA in Marketing. As Marketing Head at Adaptor Solutions, I work across performance marketing, brand development, digital campaigns and growth initiatives.</p>
+   <p>I enjoy connecting the dots between what a business wants to achieve, what an audience cares about and what the data is telling us. My approach is practical: stay curious, think clearly, execute with intent and keep improving.</p>
+   <div class="facts"><div class="fact"><b>Marketing</b><span>Academic foundation</span></div><div class="fact"><b>Adaptor Solutions</b><span>Current role</span></div><div class="fact"><b>Entrepreneurial</b><span>Builder mindset</span></div></div>
+  </div>
+ </div>
+</section>
+<section id="contact" class="contact">
+ <div class="wrap">
+  <div class="kicker">07 / Open to meaningful conversations</div>
+  <h2>LET'S MAKE<br>THE NEXT MOVE<br>MATTER.</h2>
+  <div class="contact-row"><p>Have a growth challenge, a collaboration in mind or an opportunity worth exploring? I’d be glad to hear from you.</p><a class="btn" href="mailto:johnraza561@gmail.com">Email John ↗</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div class="footer-brand">JOHN RAZA.</div><div>Marketing Head · Adaptor Solutions</div><div>© <span id="year"></span> John Raza</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+</body>
+</html>
